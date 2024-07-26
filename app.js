@@ -2,7 +2,9 @@ import mongoose from "mongoose";
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import {test} from "./backend/controllers/user.controller.js" //llamar la constante test desde user.controller.js
+import {test} from "./backend/controllers/user.controller.js"; //llamar la constante test desde user.controller.js
+import {test2} from "./backend/controllers/admin.controller.js"
+//en app.js solo ira librerias conexiones y servidor 
 
 dotenv.config(); //para que funcione lo del .env
 
@@ -22,3 +24,4 @@ app.listen(4000, ()=>{ //escuchar el servidor para ver si funciona en el puerto 
 }) 
 
 test()//para que se active el import y muestre lo que hace en este caso si funciona la conexion entre el controlador y el proyecto
+test2()
